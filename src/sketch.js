@@ -1,3 +1,4 @@
+//const socket = io();
 
 let ducks;
 let points = 0;
@@ -12,6 +13,7 @@ function preload() {
     backgroundi = loadImage('./images/fondo.png');
     sight = loadImage('./images/sight.png');
     win = loadImage('./images/dog smiling.gif');
+    inicio = loadImage('./images/duckhunt.png');
 }
 
 function setup(){
@@ -20,6 +22,7 @@ function setup(){
 }
 
 function draw() {
+
     background(backgroundi);
     noStroke();
 
@@ -104,7 +107,6 @@ class Duck{
         }
         this.normalDuckImage = loadImage('./images/normal duck.png');
         this.fastDuckImage = loadImage('./images/pink duck.png');
-        this.shooted = loadImage('./images/shooted.png')
     }
 
 show(){
